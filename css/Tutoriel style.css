@@ -1,0 +1,33 @@
+/* Ceci est un tuto sélecteurs */
+
+/* Sélecteurs généraux (body,p,section) = nom des balises */
+body{background-color: brown;}
+p{background-color: aliceblue;}
+
+/* Sélecteurs spécifiques : ici on prend le premier p (premier enfant) direct de section */
+section>p:first-child{background-color: blue;}
+section>p:last-child{background-color: aqua;}
+
+/* nth-child() = on indique le numéro de l'élément à cibler (2 = 2ème élément) */
+section>p:nth-child(2){background-color: coral;}
+section>p:nth-child(3){background-color: chartreuse;}
+
+/* On cible tout les éléments pairs */
+section>p:nth-child(even){background-color: rgb(202, 166, 22);}
+
+/* On cible tout les éléments impairs */
+section>p:nth-child(odd){background-color: darkviolet;}
+
+/* IMPORTANT : l'ordre des priorités est procédural */
+
+section>p>span{color: rgb(25, 212, 66);}
+/* ou section>p:first-child>span */
+
+/* la virgule sert à mettre plusieurs éléments qui vont reçvoir le même css */
+h1, p, span {color: rgb(233, 219, 233);}
+/* ATTENTION : La span est demandée en général, sauf que au dessus on cible directement avec section>p>span (la priorité revient à celui qui est le mieux ciblé) */
+
+/* ID(#), Class(.) */
+#section1{height: 385px; border-radius: 10px; background-color: darkblue;}
+.bleue{color: rgb(0, 255, 255); background-color: black; /* La class n'a pas la priorité, elle revient toujours à nth-child(odd) */ font-size: 50px; border-radius: 50px;}
+.raccourci{width: 50%; color: green;} /* Plusieurs class peuvent être utilisées pour plus de précision */

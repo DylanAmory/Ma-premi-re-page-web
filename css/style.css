@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+h1{
+    color: rgb(184, 16, 16);
+    font-size: 130px;
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+h2{
+    text-align: center;
+}

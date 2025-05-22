@@ -1,0 +1,53 @@
+h1 {
+  color: rgb(255, 255, 255);
+}
+#h21 {
+  color: chocolate;
+}
+#h22 {
+  color: blueviolet;
+}
+#p1 {
+  color: rgba(143, 26, 26, 0.664);
+}
+#p2 {
+  background-color: rgb(228, 220, 202);
+}
+#p3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+header {
+  text-align: center;
+  background-color: rgba(194, 130, 35, 0.384);
+  border: 25px chartreuse groove;
+  padding: 25px;
+  border-radius: 10px;
+  width: 800px;
+  margin: auto;
+}
+main {
+  background-color: rgba(169, 169, 169, 0.445);
+  border-left: 10px red solid;
+  border-top: 10px green dashed;
+  border-right: 10px yellow ridge;
+  border-bottom: 10px orange dotted;
+  border-radius: 40px;
+  padding: 10px;
+  width: 1500px;
+  height: auto;
+  margin: auto;
+}
+body {
+  background-image: url(../Mosaïque.jpg);
+  background-repeat: repeat;
+}
+footer {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border: 25px rgb(255, 0, 242) dotted;
+  padding: 25px;
+  border-radius: 15px;
+  width: 800px;
+  margin: auto;
+  background-color: rgba(71, 61, 139, 0.404);
+}
