@@ -1,0 +1,14 @@
+tbody{
+    background-color: rgb(216, 71, 204);
+
+}
+table{
+    border: 3px black solid;
+    border-collapse: collapse;
+}
+td, th{
+    border: 2px solid;
+}
+th{
+    background-color: aqua;
+}

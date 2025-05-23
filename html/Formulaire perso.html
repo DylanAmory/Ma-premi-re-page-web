@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="../css/Formulaire perso.css">
+  </head>
+  <body>
+    <header>
+      <h1>Formulaire d'inscription</h1>
+    </header>
+    <form action="">
+      <label for="nom">Nom de famille* :</label>
+      <input type="text" id="nom" placeholder="obligatoire" required/>
+      <label for="prénom">Prénom(s)* :</label>
+      <input type="text" id="prénom" placeholder="obligatoire" required />
+      <label for="email">Courriel* :</label>
+      <input
+        type="email"
+        name=""
+        id="email"
+        placeholder="Obligatoire"
+        required
+      />
+      <label for="password">Mot de passe* :</label>
+      <input
+        type="password"
+        name=""
+        id="password"
+        placeholder="Obligatoire"
+        required
+      />
+      <label for="sexe">Sexe :</label>
+      <input type="radio" name="sexe" id="Male" required />
+      <label for="male">Male</label>
+      <input type="radio" name="sexe" id="femelle" required />
+      <label for="femelle">Femelle</label>
+      <label for="âge">Quel âge avez-vous ?* :</label>
+      <input type="number" name="âge" id="âge" min="0" max="114" required/>
+      <label for="ddn">Votre date de naissance* :</label>
+      <input
+        type="date"
+        name="ddn"
+        id="ddn"
+        min="1910-01-01"
+        max="2007-01-01"
+        required
+      />
+      <label for="ID">Document d'identité (vous devez être majeur)* :</label>
+      <input type="file" name="ID" id="ID" accept="image/*" required>
+      <label for="contact">Votre numéro de téléphone :</label>
+      <input type="text" id="contact" placeholder="Optionnel" />
+      <label for="adresse">Votre adresse :</label>
+      <input type="text" id="adresse" placeholder="Optionnel" />
+      <label for="couleur">Choisissez votre couleur préféré* :</label>
+      <input type="color" name="couleur" id="couleur" required>
+      <input type="submit" value="Je valide mon inscription">
+      <input type="reset" value="Annuler">
+    </form>
+  </body>
+</html>

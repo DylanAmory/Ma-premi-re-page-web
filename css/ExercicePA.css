@@ -1,0 +1,67 @@
+table{
+ 
+    margin: auto;
+    border-collapse: collapse;
+}
+td{
+    border: 1px  rgb(0, 0, 0);
+    width: 30px;
+    height: 30px;
+}
+.noir{
+    background-color: black;
+}
+.marronfonçécheveux{
+    background-color: rgba(66, 34, 7, 0.89);
+}
+.marroncheveux{
+    background-color: rgba(82, 55, 34, 0.89);
+}
+.marronclaircheveux{
+    background-color: black;
+}
+.beigefonçé{
+    background-color: black;
+}
+.beigeclair{
+    background-color: bisque;
+}
+.verttrèsfonçé{
+    background-color: bisque;
+}
+.vertfonçé{
+    background-color: black;
+}
+.vert{
+    background-color: black;
+}
+.vertclair{
+    background-color: black;
+}
+.doré{
+    background-color: black;
+}
+.blanccassé{
+    background-color: black;
+}
+.blanccasséclair{
+    background-color: bisque;
+}
+.marronfonçéveste{
+    background-color: bisque;
+}
+.marronclairveste{
+    background-color: black;
+}
+.marronfonçépantalon{
+    background-color: black;
+}
+.marronpantalon{
+    background-color: black;
+}
+.marronclairpantalon{
+    background-color: black;
+}
+.blanc{
+    background-color: white;
+}

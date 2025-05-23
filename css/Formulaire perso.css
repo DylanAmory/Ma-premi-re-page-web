@@ -1,0 +1,12 @@
+header{
+    text-align: center;
+    border-style: solid;
+    background-image: url(/mosïque2.webp);
+    background-repeat: no-repeat;
+    border-width: 50px;
+    margin-left: 317px;
+    margin-right: 317px;
+}
+h1{
+    color: rgb(235, 15, 15);
+}
