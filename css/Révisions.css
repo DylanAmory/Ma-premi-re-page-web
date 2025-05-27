@@ -1,11 +1,11 @@
 /* * = tous les éléments de la page */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: grey;
+body {
+  background-color: grey;
 }
 
 /* 3 solutions pour aller chercher h2 Bla bla bla bla bla. */
@@ -20,39 +20,92 @@ body{
 /* 1ère solution : Aller chercher chaque éléments à la main séparés par une "," (qui veut dire passons au prochain élément) */
 /* 2éme solution : Les classes (.class) */
 
-#intro{
-    color: blue;
+/* VRAI CSS */
+
+h1 {
+  text-align: center;
 }
-.note{
-    background-color: lightyellow;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+#ulflex {
+  display: flex;
+  flex-direction: row; /* Disposition en ligne (par défaut quand on met display: flex), si on veut changer on a le "mode" column */
+  justify-content: space-evenly; /* Justify-content aligne les éléments flex horizontalement SEULEMENT si flex-direction est en row , sinon il agit verticalement en cas de column */
+  height: 150px;
+  list-style: none;
+  align-items: center; /* Comme justify-content mais verticalement SAUF si flex-direction est en column, dans ce cas il agira horiznontalement */
 }
-#important{
-    color: pink;
+
+/* nav ul li{
+list-style-type: lower-greek;
+} */
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
 }
-.note{
-    color: rgb(241, 9, 48);
+
+/* hover : pseudo-class qui permet de changer le CSS lors d'un survol à la souris */
+.liens:hover {
+  color: purple;
 }
-.cta{
-    background-color: green;
-    color: white;
-    padding: 15px;
+li:hover {
+  transform: scale(1.5);
 }
-.info{
-    color: blue;
+/* Background image */
+#img-soleil {
+  background-image: url(/Aube2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50% 50% / 50% 10%;
+  height: 500px;
 }
-#pareil{
-    color: orange;
+
+/* Margin et padding : plusieurs façon de faire : 
+pour les 4 mêmes (haut, droite, bas,gauche) -> margin : 10; pour haut/bas et gauche/droite -> margin : 10pax 20px;
+pour cibler chacun -> margin : 10px 20px 30px 40px;
+pour les margin/padding à 0 -> margin : 0; */
+
+/* Grid */
+
+
+span{
+    color: rgba(0, 255, 55, 0.678);
 }
-.carte{
-    display: grid;
-    border: 1px solid red;
-    margin: 15px;
-    box-shadow: 10px 5px 5px purple;
+#intro {
+  color: blue;
 }
-#accueil > h1{
-    color: brown;
+.note {
+  background-color: lightyellow;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-.actif{
-    background-color: aqua;
+#important {
+  color: pink;
+}
+.note {
+  color: rgb(241, 9, 48);
+}
+.cta {
+  background-color: green;
+  color: white;
+  padding: 15px;
+}
+.info {
+  color: blue;
+}
+#pareil {
+  color: orange;
+}
+.carte {
+  display: grid;
+  border: 1px solid red;
+  margin: 15px;
+  box-shadow: 10px 5px 5px purple;
+}
+#accueil > h1 {
+  color: brown;
+}
+.actif {
+  background-color: aqua;
 }
