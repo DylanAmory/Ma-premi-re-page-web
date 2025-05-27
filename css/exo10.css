@@ -1,0 +1,52 @@
+* {
+  margin: 15px;
+  padding: 10px;
+  border: 4px solid black;
+}
+main {
+  background-color: darkgoldenrod;
+}
+header {
+  background-color: darksalmon;
+}
+footer {
+  background-color: deeppink;
+}
+section {
+  background-color: gray;
+}
+html {
+  background-color: darkcyan;
+  height: 100vh;
+  margin: auto;
+}
+body {
+  background-color: deepskyblue;
+}
+.caligraphie {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.vert {
+  background-color: green;
+}
+.pink {
+  background-color: pink;
+}
+#jaune {
+  color: yellow;
+}
+#red {
+  color: red;
+}
+#blue {
+  color: blue;
+}
+#purple {
+  color: purple;
+}
+#orange {
+  color: orange;
+}
+.aqua {
+  color: aqua;
+}

@@ -1,0 +1,58 @@
+/* * = tous les éléments de la page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: grey;
+}
+
+/* 3 solutions pour aller chercher h2 Bla bla bla bla bla. */
+
+/* 1ère solution : main > section > div:last-child > h2*/
+
+/* 2ème solution : # = id, le nom de l'id HTML ensuite */
+
+/* Les NTH : énième => nth-child(n) */
+
+/* 2 solutions si on a un css identique pour plusieurs éléments */
+/* 1ère solution : Aller chercher chaque éléments à la main séparés par une "," (qui veut dire passons au prochain élément) */
+/* 2éme solution : Les classes (.class) */
+
+#intro{
+    color: blue;
+}
+.note{
+    background-color: lightyellow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#important{
+    color: pink;
+}
+.note{
+    color: rgb(241, 9, 48);
+}
+.cta{
+    background-color: green;
+    color: white;
+    padding: 15px;
+}
+.info{
+    color: blue;
+}
+#pareil{
+    color: orange;
+}
+.carte{
+    display: grid;
+    border: 1px solid red;
+    margin: 15px;
+    box-shadow: 10px 5px 5px purple;
+}
+#accueil > h1{
+    color: brown;
+}
+.actif{
+    background-color: aqua;
+}

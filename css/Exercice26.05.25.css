@@ -1,0 +1,16 @@
+body{
+    margin: auto;
+}
+header{
+    color: white;
+    margin-top: 30px;
+}
+.c2{
+    background-color: red;
+    display: grid;
+    grid-template-columns: 85% 4% 4% 7%;
+    padding: 20px;
+}
+.c3{
+    background-color: blue;
+}
