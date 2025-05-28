@@ -1,0 +1,129 @@
+/* * = tous les elements de la page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+}
+
+
+/* 2 solutions pour aller chercher le h2 ron et hermionne */
+
+/* 1ere solution */
+main>section>div:last-child>h2 {
+    font-family: cursive;
+}
+
+/* main > section > div:first-child > h2 pour la premiere div  */
+
+/* 2eme solution */
+/* # = id, le nom de l'id HTML ensuite */
+#ron-hermionne {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* Les NTH = nth => N ième*/
+
+main>section>div:nth-child(2) {
+    color: brown;
+}
+
+/* 2 solutions si on a un CSS identique pour plusieurs éléments */
+
+/* Premiere solution: Aller chercher chaque element à la main séparés par une ',' (qui veut dire passons au prochain element) */
+main>section>div:first-child>h2,
+main>section>div:first-child>p {
+    color: blue;
+}
+
+/* 2 ème solution : Les classes */
+
+.center {
+    text-align: center;
+}
+
+.red {
+    background-color: red;
+}
+
+/* header > h1 , main > section > div:first-child > p , main > section > div:last-child > h2 {
+
+} */
+
+
+/* id = marge-h2 */
+#marge-h2 {
+    margin: 20px;
+}
+
+/* VRAI CSS */
+
+nav ul {
+    display: flex;
+    flex-direction: row; /* Disposition en ligne (par défaut quand on met display: flex), si on veut changer on a le 'mode' column */
+    justify-content: space-evenly; /* Justify-content aligne les éléments flex Horizontalement SEULEMENT si flex-direction est en row, sinon il agit verticalement en cas de column */
+    height: 100px;
+    list-style: none;
+    align-items: center; /* Comme justify-content mais verticalement SAUF si flex-direction est en column, dans ce cas il agira horizontalement */
+}
+
+/* nav ul li {
+    list-style-type:lower-greek;
+} */
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+/* 
+li:hover {
+transform: scale(2);
+} */
+
+/* hover : pseudo-class qui permet de changer le CSS lors d'un survol à la souris  */
+.liens:hover {
+    color: purple;
+}
+
+/* Background image */
+#img-potter {
+    background-image: url(../img/harry.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50% 50% / 50% 10%;
+    height: 600px;
+}
+
+
+#marge-h2 {
+    width: fit-content;
+    margin: 20px auto; /* 
+    
+    Margin (et padding) : plusieurs façons de faire : 
+
+    pour les 4 mêmes (haut, droite, bas gauche) -> margin : 10px;
+    pour en haut/bas et gauche/droite -> margin : 10px 20px;
+    pour cibler chacun -> margin : 10px 30px 40px 20px;
+    pour les margin/paddin à 0 -> margin : 0;
+    */
+}
+
+/* Grid */
+
+main>section>div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px 0;
+}
+
+span {
+    color: red;
+    font-weight: bold; /* Text en gras */
+}
+
